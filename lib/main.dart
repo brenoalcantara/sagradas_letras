@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'components/sidebar.dart';
+import 'screens/about.dart';
 
 void main() => runApp(App());
 
@@ -27,13 +28,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,24 +40,27 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         
         child: Column(
-          
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+            Padding(
+              padding: EdgeInsets.all(5.0),
+              child:Text(
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida risus felis. Morbi scelerisque tincidunt ornare. Nam vestibulum est mi, at congue lacus iaculis eu.',
+              )
+            )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => AboutScreen()),
+          );
+        },
         tooltip: 'Next',
         child: Icon(Icons.navigate_next),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
     );
   }
 }
