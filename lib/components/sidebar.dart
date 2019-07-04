@@ -8,9 +8,12 @@ class Sibebar extends StatelessWidget {
       child: new ListView(
         children: <Widget>[
           DrawerHeader(
-            child: Text('Drawer Header'),
             decoration: BoxDecoration(
               color: Colors.blueGrey,
+              image: new DecorationImage( 
+                image: new AssetImage('assets/images/logo.png'),
+                // repeat: ImageRepeat.repeat,
+              ),
             ),
             margin: EdgeInsets.all(10.0)
           ),
