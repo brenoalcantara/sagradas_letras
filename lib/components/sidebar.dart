@@ -12,6 +12,7 @@ class Sibebar extends StatelessWidget {
               color: Colors.blueGrey,
               image: new DecorationImage( 
                 image: new AssetImage('assets/images/logo.png'),
+                fit: BoxFit.cover
                 // repeat: ImageRepeat.repeat,
               ),
             ),
