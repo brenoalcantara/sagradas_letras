@@ -10,7 +10,7 @@ class Sibebar extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blueGrey,
+              //color: Colors.blueGrey,
               image: new DecorationImage( 
                 image: new AssetImage('assets/images/logo.png'),
                 fit: BoxFit.cover
