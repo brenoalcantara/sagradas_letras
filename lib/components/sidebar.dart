@@ -20,7 +20,10 @@ class Sibebar extends StatelessWidget {
             margin: EdgeInsets.all(10.0)
           ),
           new ListTile(
-            title: new Text('Item 1')
+            title: new Text('Item 1'),
+            onTap: () {
+              //Navigator.pushNamed(context, '/');
+            },
           ),
           new Divider(),
           new ListTile(

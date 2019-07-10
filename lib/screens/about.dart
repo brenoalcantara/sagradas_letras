@@ -40,7 +40,7 @@ class _AboutScreenState extends State<AboutScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-            Navigator.pop(context);
+          Navigator.pop(context);
         },
         tooltip: 'Prev',
         child: Icon(Icons.navigate_before),

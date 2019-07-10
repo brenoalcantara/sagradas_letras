@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'components/sidebar.dart';
 import 'screens/about.dart';
+import 'components/sidebar.dart';
 
 void main() => runApp(App());
 
@@ -14,6 +14,11 @@ class App extends StatelessWidget {
         primarySwatch: Colors.blueGrey,
       ),
       home: HomeScreen(title: 'Sagradas Letras'),
+      // initialRoute: '/',
+      // routes: {
+      //   '/': (context) => HomeScreen(),
+      //   '/about': (context) => AboutScreen(),
+      // },
     );
   }
 }
@@ -53,6 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          //Navigator.pushNamed(context, '/about');
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => AboutScreen()),
